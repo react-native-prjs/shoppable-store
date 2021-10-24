@@ -18,8 +18,8 @@ import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
-import TabOneScreen from "../screens/VideosScreen";
-import TabTwoScreen from "../screens/CartScreen";
+import VideosScreen from "../screens/VideosScreen";
+import CartScreen from "../screens/CartScreen";
 import ProductScreen from "../screens/ProductScreen";
 import {
   RootStackParamList,
@@ -97,7 +97,7 @@ function BottomTabNavigator() {
     >
       <BottomTab.Screen
         name="Videos"
-        component={TabOneScreen}
+        component={VideosScreen}
         options={({ navigation }: RootTabScreenProps<"Videos">) => ({
           title: "Videos",
           tabBarIcon: ({ color }) => (
@@ -122,7 +122,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Cart"
-        component={TabTwoScreen}
+        component={CartScreen}
         options={{
           title: "Cart",
           tabBarIcon: ({ color }) => (

@@ -1,4 +1,4 @@
-var forest_bike = {
+const forest_bike = {
   shoppable: {
     showPostPlayOverlay: true,
     transformation: {

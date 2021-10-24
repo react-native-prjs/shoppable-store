@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import * as React from "react";
-import { Platform, StyleSheet } from "react-native";
+import { Platform } from "react-native";
 import { useEffect, useRef } from "react";
 
-import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import data from "./../data/";
+import styles from "./../styles/ModalScreen";
 
 type ModalParams = {
   route: any;
@@ -17,7 +17,7 @@ export default function ModalScreen({ route, navigation }: ModalParams) {
   console.log(name);
   const videoRef = useRef(null);
   useEffect(() => {
-    var source = data[id];
+    var source = data[id] as any;
     console.log(source);
 
     if (window.cloudinary.Cloudinary) {
@@ -28,8 +28,8 @@ export default function ModalScreen({ route, navigation }: ModalParams) {
   });
 
   return (
-    <View style={_styles.cont}>
-      <Text style={_styles.title}>{name}</Text>
+    <View style={styles.cont}>
+      <Text style={styles.title}>{name}</Text>
       <video
         style={{ width: "100%" }}
         ref={videoRef}
@@ -42,7 +42,7 @@ export default function ModalScreen({ route, navigation }: ModalParams) {
     </View>
   );
 }
-
+/*
 function _ModalScreen() {
   return (
     <View style={styles.container}>
@@ -54,28 +54,14 @@ function _ModalScreen() {
       />
       <EditScreenInfo path="/screens/ModalScreen.tsx" />
 
-      {/* Use a light status bar on iOS to account for the black space above the modal */}
+      { Use a light status bar on iOS to account for the black space above the modal }
       <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
     </View>
   );
 }
+*/
 
-const _styles = StyleSheet.create({
-  cont: {
-    width: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginTop: 7,
-    marginBottom: 7,
-  },
-});
-
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
@@ -91,3 +77,4 @@ const styles = StyleSheet.create({
     width: "80%",
   },
 });
+*/

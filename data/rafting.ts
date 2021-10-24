@@ -26,7 +26,7 @@ var rafting = {
           action: "goto",
           pause: true,
           args: {
-            url: "/product/raft",
+            url: "/product?id=raft&pictureUrl=https://res.cloudinary.com/dwbggi96z/image/upload/v1622914429/nrs-large-raft2-1400x788_nmjiow.jpg",
           },
         },
       },
@@ -50,7 +50,7 @@ var rafting = {
           action: "goto",
           pause: true,
           args: {
-            url: "/product/raft_paddler",
+            url: "/product?id=raft_paddler&pictureUrl=",
           },
         },
       },
@@ -74,7 +74,7 @@ var rafting = {
           action: "goto",
           pause: true,
           args: {
-            url: "/product/life_jacket",
+            url: "/product?id=life_jacket&pictureUrl=https://res.cloudinary.com/dwbggi96z/image/upload/v1622914385/x-treme-raft_ff6ggn.jpg",
           },
         },
       },
@@ -98,7 +98,7 @@ var rafting = {
           action: "goto",
           pause: true,
           args: {
-            url: "/product/raft_helmet",
+            url: "/product?id=raft_helmet&pictureUrl=https://res.cloudinary.com/dwbggi96z/image/upload/v1622914411/download_tji0tf.jpg",
           },
         },
       },

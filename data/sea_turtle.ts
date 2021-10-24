@@ -1,4 +1,4 @@
-var sea_turtle = {
+const sea_turtle = {
   shoppable: {
     showPostPlayOverlay: true,
     transformation: {
@@ -26,7 +26,7 @@ var sea_turtle = {
           action: "goto",
           pause: true,
           args: {
-            url: "/product/sea_turtle",
+            url: "/product?id=sea_turtle&pictureUrl=https://res.cloudinary.com/dwbggi96z/image/upload/v1622914620/Screenshot_2021-06-05_at_18.36.28_ws0rgm.png",
           },
         },
       },
